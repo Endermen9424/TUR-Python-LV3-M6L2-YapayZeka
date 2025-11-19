@@ -15,10 +15,10 @@ async def on_ready():
 
 @bot.command()
 async def help(ctx):
-    help_text = (
-        "Merhaba! Görüntü üretmek için bir metin mesajı gönderin.\n"
-        "Örnek: 'Bir dağın üzerinde gün batımı sahnesi.'"
-    )
+    help_text = """Merhaba! Ben bir görüntü oluşturma botuyum. Aşağıdaki komutları kullanabilirsiniz:
+    !help - Yardım mesajını gösterir.
+    !sing - Türkçe marş söyler.
+    Mesaj göndererek istediğiniz görüntüyü oluşturabilirsiniz."""
     await ctx.send(help_text)
 
 @bot.command()
